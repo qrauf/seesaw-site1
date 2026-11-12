@@ -22,8 +22,8 @@ const NAV = [
 const TILES = [
   { src: 'studio-bts.png', kicker: 'Showreel', title: 'SeeSaw Productions Reel', note: 'Watch on Vimeo', href: VIMEO },
   { src: 'tile-crane.jpg', kicker: 'Capability', title: 'TV Commercials', note: 'Illustrative frame', href: '#capabilities' },
-  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Branded Content', note: 'Illustrative frame', href: '#capabilities' },
-  { src: 'tile-post.jpg', kicker: 'Capability', title: 'Post-Production', note: 'Illustrative frame', href: '#capabilities' },
+  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Branded Content', note: '', href: '#capabilities' },
+  { src: 'tile-post.jpg', kicker: 'Capability', title: 'Post-Production', note: '', href: '#capabilities' },
 ];
 
 const SERVICES = [
@@ -161,9 +161,9 @@ function Work() {
               <div className="absolute inset-x-0 bottom-0 p-6">
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">{t.kicker}</p>
                 <h3 className="mt-2 font-serif text-2xl">{t.title}</h3>
-                <p className="mt-3 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-foreground/60 transition-colors group-hover:text-foreground">
+                {t.note && <p className="mt-3 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-foreground/60 transition-colors group-hover:text-foreground">
                   {ext && <Play className="h-3 w-3 fill-current" />}{t.note}{ext && <ArrowUpRight className="h-3 w-3" />}
-                </p>
+                </p>}
               </div>
               <span className="absolute top-5 right-5 font-mono text-[10px] text-foreground/50">0{i + 1}</span>
             </a>
