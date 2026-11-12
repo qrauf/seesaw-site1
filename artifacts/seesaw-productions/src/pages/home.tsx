@@ -196,8 +196,7 @@ function Work() {
             <span className="absolute right-4 top-4 rounded-full border border-white/60 bg-black/30 p-2 text-white transition-colors group-hover:bg-primary">
               <Play className="h-4 w-4 fill-current" aria-hidden="true" />
             </span>
-            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-5 text-white">
-              <h3 className="font-serif text-xl">{film.title}</h3>
+            <div className="absolute inset-x-0 bottom-0 flex items-end justify-end p-5 text-white">
               {film.duration && <span className="shrink-0 font-mono text-[10px]">{film.duration}</span>}
             </div>
           </a>
