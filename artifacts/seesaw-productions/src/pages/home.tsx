@@ -199,6 +199,7 @@ function Work() {
       <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 px-5 md:px-8 py-20 md:py-28 border-b border-border">
         <h2 className="max-w-3xl font-serif text-4xl md:text-6xl leading-[1.05]">One reel. <em className="text-foreground/50">More than 6 years</em> of frames that moved people.</h2>
         <a href={VIMEO} target="_blank" rel="noreferrer" data-testid="link-vimeo-channel" className="group flex items-center gap-3 text-[12px] uppercase tracking-[0.24em] hover:text-primary">
+          <Play className="h-4 w-4 shrink-0 fill-current" aria-hidden="true" />
           Full showreel on Vimeo <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
         </a>
       </div>
