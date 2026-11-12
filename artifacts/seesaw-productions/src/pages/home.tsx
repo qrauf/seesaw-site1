@@ -22,13 +22,13 @@ const NAV = [
 const TILES = [
   { src: 'studio-bts.png', kicker: 'Showreel', title: 'SeeSaw Productions Reel', note: 'Watch on Vimeo', href: VIMEO },
   { src: 'tile-crane.jpg', kicker: 'Capability', title: 'TV Commercials', note: '', href: '#capabilities' },
-  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Branded Content', note: '', href: '#capabilities' },
+  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Content', note: '', href: '#capabilities' },
   { src: 'tile-post.jpg', kicker: 'Capability', title: 'Post-Production', note: '', href: '#capabilities' },
 ];
 
 const SERVICES = [
   { n: '01', t: 'TV Commercials', d: 'Cinematic broadcast spots, carried from concept to final delivery.' },
-  { n: '02', t: 'Branded Content', d: 'Narrative-driven films that build a genuine connection with audiences.' },
+  { n: '02', t: 'Content', d: 'Narrative-driven films that build a genuine connection with audiences.' },
   { n: '03', t: 'Digital Ads', d: 'Agile, multi-format social content cut for every screen and platform.' },
   { n: '04', t: 'AI Productions', d: 'AI-assisted workflows and generative content, directed with a filmmaker’s eye.' },
   { n: '05', t: 'Post-Production', d: 'Editing, colour grading, VFX and sound under one roof.' },
@@ -130,7 +130,7 @@ function Hero() {
           Crafting legacies<br /><em className="text-primary">with impact.</em>
         </h1>
         <p className="rise mt-7 max-w-xl text-sm md:text-base text-foreground/75 font-light" style={{ animationDelay: '500ms' }}>
-          Award-winning TVC, DVC &amp; Branded Content Production. Cinematic storytelling that tips the scales in your favor.
+          Award-winning TVC, DVC &amp; Content Production. Cinematic storytelling that tips the scales in your favor.
         </p>
         <a href={VIMEO} target="_blank" rel="noreferrer" data-testid="button-watch-showreel" className="rise group mt-10 flex items-center gap-4" style={{ animationDelay: '700ms' }}>
           <span className="flex h-16 w-16 items-center justify-center rounded-full border border-foreground/40 transition-all duration-500 group-hover:scale-110 group-hover:border-primary group-hover:bg-primary">
