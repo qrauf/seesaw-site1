@@ -123,7 +123,9 @@ function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_20%,rgba(10,8,7,.85)_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
-        <p className="rise font-mono text-lg md:text-3xl uppercase tracking-[0.2em] text-primary" style={{ animationDelay: '150ms' }}>Seesaw Production House</p>
+        <p className="rise group font-mono text-lg md:text-3xl uppercase tracking-[0.2em] text-primary" style={{ animationDelay: '150ms' }}>
+          <span className="inline-block transition-transform duration-300 ease-out motion-safe:group-hover:scale-110 motion-safe:group-hover:-translate-y-1">Seesaw Production House</span>
+        </p>
         <h1 className="rise mt-6 font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-tight" style={{ animationDelay: '300ms' }}>
           Crafting legacies<br /><em className="text-primary">with impact.</em>
         </h1>
