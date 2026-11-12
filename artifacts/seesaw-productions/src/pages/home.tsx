@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { ArrowUpRight, Facebook, Instagram, Linkedin, Mail, MapPin, Menu, Phone, Play, X } from 'lucide-react';
+import { vimeoFilms } from '@/data/vimeo-films';
 
 const img = (n: string) => `${import.meta.env.BASE_URL}images/${n}`;
 const VIMEO = 'https://vimeo.com/seesawproduction';
@@ -149,6 +150,8 @@ function Hero() {
 }
 
 function Work() {
+  const [visibleFilms, setVisibleFilms] = useState(12);
+  const shownFilms = vimeoFilms.slice(0, visibleFilms);
   return (
     <section id="work" aria-label="Work">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -169,6 +172,53 @@ function Work() {
             </a>
           );
         })}
+      </div>
+      <div className="px-5 md:px-8 pt-20 md:pt-28 pb-8 flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-primary">Our films · {vimeoFilms.length} videos</p>
+          <h2 className="mt-5 font-serif text-4xl md:text-6xl">Our work, in motion.</h2>
+        </div>
+        <a href={`${VIMEO}/videos`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] hover:text-primary">
+          All films on Vimeo <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+        </a>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-2 px-5 md:px-8">
+        {shownFilms.map((film) => (
+          <a
+            key={film.id}
+            href={`https://vimeo.com/${film.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Watch ${film.title} on Vimeo (opens in a new tab)`}
+            data-testid={`card-vimeo-${film.id}`}
+            className="group relative block aspect-video overflow-hidden bg-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-[-2px]"
+          >
+            <img src={film.thumbnail} alt={film.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
+            <span className="absolute right-2 top-2 rounded-full border border-white/60 bg-black/30 p-1.5 text-white transition-colors group-hover:bg-primary">
+              <Play className="h-3 w-3 fill-current" aria-hidden="true" />
+            </span>
+            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-2 p-2.5 text-white">
+              <h3 className="line-clamp-2 font-serif text-sm leading-tight">{film.title}</h3>
+              {film.duration && <span className="shrink-0 font-mono text-[10px]">{film.duration}</span>}
+            </div>
+          </a>
+        ))}
+      </div>
+      <div className="flex flex-col items-center gap-5 px-5 py-10">
+        <p role="status" aria-live="polite" className="font-mono text-xs text-foreground/60">
+          Showing {shownFilms.length} of {vimeoFilms.length} films
+        </p>
+        {visibleFilms < vimeoFilms.length && (
+          <button
+            type="button"
+            onClick={() => setVisibleFilms((count) => Math.min(count + 12, vimeoFilms.length))}
+            data-testid="button-load-more-films"
+            className="border border-primary px-8 py-4 text-xs uppercase tracking-[0.2em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4"
+          >
+            Load more films
+          </button>
+        )}
       </div>
       <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 px-5 md:px-8 py-20 md:py-28 border-b border-border">
         <h2 className="max-w-3xl font-serif text-4xl md:text-6xl leading-[1.05]">One reel. <em className="text-foreground/50">More than 6 years</em> of frames that moved people.</h2>

@@ -27,7 +27,7 @@ _Populate as you build — short repo map plus pointers to the source-of-truth f
 ## Architecture decisions
 
 - Use the existing SeeSaw site as the content source and Rainfall Films as the visual reference, as requested by the user.
-- Only the Vimeo showreel is verified work; illustrative imagery must not be presented as client campaigns.
+- Use verified titles, thumbnails, and video links from SeeSaw's public Vimeo profile for portfolio films; illustrative imagery must not be presented as client campaigns.
 - Contact inquiries open a draft in the visitor's email application; the website does not claim to send or store inquiries.
 
 ## Product
