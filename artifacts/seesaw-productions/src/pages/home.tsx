@@ -422,7 +422,6 @@ function Footer() {
       </div>
       <div className="mt-16 flex flex-col sm:flex-row justify-between gap-3 border-t border-border pt-6 font-mono text-[10px] uppercase tracking-[0.25em] text-foreground/40">
         <span>&copy; {new Date().getFullYear()} SeeSaw Productions</span>
-        <span>Some imagery on this site is illustrative and does not depict client work.</span>
       </div>
     </footer>
   );
