@@ -1,6 +1,6 @@
-# [Project name]
+# SeeSaw Productions
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A cinematic portfolio website for SeeSaw Productions, a Karachi production house.
 
 ## Run & Operate
 
@@ -26,7 +26,9 @@ _Populate as you build — short repo map plus pointers to the source-of-truth f
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Use the existing SeeSaw site as the content source and Rainfall Films as the visual reference, as requested by the user.
+- Only the Vimeo showreel is verified work; illustrative imagery must not be presented as client campaigns.
+- Contact inquiries open a draft in the visitor's email application; the website does not claim to send or store inquiries.
 
 ## Product
 
