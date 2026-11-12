@@ -274,7 +274,7 @@ function TeamCard({ m, i }: { m: (typeof TEAM)[number]; i: number }) {
   const initials = m.name.split(' ').map((p) => p[0]).join('');
   return (
     <figure className="reveal group" style={{ transitionDelay: `${i * 90}ms` }} data-testid={`card-team-${i}`}>
-      <div className="relative aspect-[3/4] w-3/4 max-w-[240px] overflow-hidden bg-muted">
+      <div className="relative aspect-[3/4] overflow-hidden bg-muted">
         {err ? (
           <div className="flex h-full items-center justify-center font-serif text-6xl text-primary">{initials}</div>
         ) : (
