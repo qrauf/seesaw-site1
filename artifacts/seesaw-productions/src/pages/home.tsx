@@ -22,6 +22,8 @@ const NAV = [
 const TILES = [
   { src: 'studio-bts.png', kicker: 'Showreel', title: 'SeeSaw Productions Reel', note: 'Watch on Vimeo', href: VIMEO },
   { src: 'tile-crane.jpg', kicker: 'Capability', title: 'TV Commercials', note: 'Illustrative frame', href: '#capabilities' },
+  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Branded Content', note: 'Illustrative frame', href: '#capabilities' },
+  { src: 'tile-post.jpg', kicker: 'Capability', title: 'Post-Production', note: 'Illustrative frame', href: '#capabilities' },
 ];
 
 const SERVICES = [
@@ -149,7 +151,7 @@ function Hero() {
 function Work() {
   return (
     <section id="work" aria-label="Work">
-      <div className="grid grid-cols-1 sm:grid-cols-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {TILES.map((t, i) => {
           const ext = t.href.startsWith('http');
           return (
