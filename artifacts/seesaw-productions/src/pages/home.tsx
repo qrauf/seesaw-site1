@@ -316,9 +316,9 @@ function Contact() {
             <li className="flex items-start gap-4" data-testid="text-address"><MapPin className="h-4 w-4 mt-1 text-primary shrink-0" />{ADDRESS}</li>
           </ul>
           <nav aria-label="Social media" className="mt-10 flex flex-wrap gap-3">
-            <button type="button" disabled title="Facebook page link coming soon" className="inline-flex items-center gap-2 border border-border px-4 py-3 text-xs text-foreground/40 cursor-not-allowed">
-              <Facebook className="h-4 w-4" aria-hidden="true" /> Facebook <span className="sr-only">(page link pending)</span>
-            </button>
+            <a href="https://www.facebook.com/profile.php?id=100063675791711" target="_blank" rel="noopener noreferrer" data-testid="link-contact-facebook" className="inline-flex items-center gap-2 border border-border px-4 py-3 text-xs text-foreground/80 transition-colors hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4">
+              <Facebook className="h-4 w-4" aria-hidden="true" /> Facebook <span className="sr-only">(opens in a new tab)</span>
+            </a>
             <a href="https://www.linkedin.com/company/seesaw-production" target="_blank" rel="noopener noreferrer" data-testid="link-contact-linkedin" className="inline-flex items-center gap-2 border border-border px-4 py-3 text-xs text-foreground/80 transition-colors hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4">
               <Linkedin className="h-4 w-4" aria-hidden="true" /> LinkedIn <span className="sr-only">(opens in a new tab)</span>
             </a>
