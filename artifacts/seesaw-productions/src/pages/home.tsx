@@ -13,8 +13,8 @@ const PHONE_HREF = 'tel:+923213784208';
 const ADDRESS = 'Suite#402, Murtaza Lane 1-A, DHA Phase 8, Karachi';
 
 const NAV = [
-  { id: 'team', label: 'Team' },
   { id: 'work', label: 'Work' },
+  { id: 'team', label: 'Team' },
   { id: 'studio', label: 'Studio' },
   { id: 'capabilities', label: 'Capabilities' },
   { id: 'contact', label: 'Contact' },
@@ -434,8 +434,8 @@ export default function Home() {
       <Header />
       <main id="main">
         <Hero />
-        <Team />
         <Work />
+        <Team />
         <Studio />
         <Capabilities />
         <Clients />
