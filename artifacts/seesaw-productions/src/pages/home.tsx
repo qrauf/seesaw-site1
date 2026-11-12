@@ -83,8 +83,8 @@ function Header() {
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 bg-primary text-primary-foreground px-3 py-2 text-sm">Skip to content</a>
       <div className="flex h-16 items-center justify-between px-5 md:px-8">
         <a href="#top" className="flex items-center gap-3" data-testid="link-home" aria-label="SeeSaw Productions, back to top">
-          <Logo className="h-10 w-10" />
-          <span className="text-[13px] font-medium tracking-[0.32em] uppercase">SeeSaw</span>
+          <Logo className="h-14 w-14" />
+          <span className="text-[15px] font-medium tracking-[0.32em] uppercase">SeeSaw</span>
         </a>
         <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
           {NAV.map((n) => (
