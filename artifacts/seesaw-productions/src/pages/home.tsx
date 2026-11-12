@@ -390,7 +390,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row justify-between gap-10">
         <div className="flex items-center gap-5">
           <Logo className="h-20 w-20" />
-          <p className="font-serif text-2xl max-w-xs leading-tight">Cinematic storytelling, made in Karachi.</p>
+          <p className="font-serif text-2xl max-w-xs leading-tight">Cinematic storytelling.</p>
         </div>
         <nav aria-label="Footer" className="flex flex-wrap gap-x-8 gap-y-3">
           {NAV.map((n) => <a key={n.id} href={`#${n.id}`} className="text-[12px] uppercase tracking-[0.24em] text-foreground/60 hover:text-primary">{n.label}</a>)}
