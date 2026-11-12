@@ -38,7 +38,7 @@ const SERVICES = [
 const TEAM = [
   { name: 'Salman Tahir', role: 'Founder & Executive Producer', src: 'salman.jpg' },
   { name: 'Naveed Zuberi', role: 'Producer & Business Director', src: 'naveed-zuberi.jpeg', imageClass: 'origin-[50%_85%] scale-[1.6] group-hover:scale-[1.65]' },
-  { name: 'Dilawar Ghafoor', role: 'Producer', src: 'dilawar.jpeg' },
+  { name: 'Dilawar Ghafoor', role: 'Producer', src: 'dilawar-clean.jpeg' },
   { name: 'Nawal Karim', role: 'Associate Producer', src: 'nawal.png' },
 ];
 
