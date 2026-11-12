@@ -22,13 +22,13 @@ const NAV = [
 const TILES = [
   { src: 'studio-bts.png', kicker: 'Showreel', title: 'SeeSaw Productions Reel', note: 'Watch on Vimeo', href: VIMEO },
   { src: 'tile-crane.jpg', kicker: 'Capability', title: 'TV Commercials', note: '', href: '#capabilities' },
-  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Content', note: '', href: '#capabilities' },
+  { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Content Production', note: '', href: '#capabilities' },
   { src: 'tile-post.jpg', kicker: 'Capability', title: 'Post-Production', note: '', href: '#capabilities' },
 ];
 
 const SERVICES = [
   { n: '01', t: 'TV Commercials', d: 'Cinematic broadcast spots, carried from concept to final delivery.' },
-  { n: '02', t: 'Content', d: 'Narrative-driven films that build a genuine connection with audiences.' },
+  { n: '02', t: 'Content Production', d: 'Narrative-driven films that build a genuine connection with audiences.' },
   { n: '03', t: 'Digital Ads', d: 'Agile, multi-format social content cut for every screen and platform.' },
   { n: '04', t: 'AI Productions', d: 'AI-assisted workflows and generative content, directed with a filmmaker’s eye.' },
   { n: '05', t: 'Post-Production', d: 'Editing, colour grading, VFX and sound under one roof.' },
