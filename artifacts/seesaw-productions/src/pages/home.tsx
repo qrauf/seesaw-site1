@@ -328,6 +328,27 @@ function Contact() {
               <Instagram className="h-4 w-4" aria-hidden="true" /> Instagram <span className="sr-only">(opens in a new tab)</span>
             </a>
           </nav>
+          <div className="mt-8 overflow-hidden border border-border">
+            <iframe
+              title="SeeSaw Productions studio location on Google Maps"
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS)}&z=16&output=embed`}
+              className="block h-64 w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              data-testid="map-studio-location"
+            />
+            <a
+              href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ADDRESS)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-3 px-4 py-4 text-xs text-foreground/80 transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+              data-testid="link-studio-directions"
+            >
+              Get directions on Google Maps
+              <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
+            </a>
+          </div>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} noValidate className="md:col-span-6 md:col-start-7 reveal space-y-8" aria-label="Project enquiry">
           <div className="grid sm:grid-cols-2 gap-8">
