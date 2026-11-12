@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { ArrowUpRight, Mail, MapPin, Menu, Phone, Play, X } from 'lucide-react';
+import { ArrowUpRight, Facebook, Instagram, Linkedin, Mail, MapPin, Menu, Phone, Play, X } from 'lucide-react';
 
 const img = (n: string) => `${import.meta.env.BASE_URL}images/${n}`;
 const VIMEO = 'https://vimeo.com/seesawproduction';
@@ -315,6 +315,17 @@ function Contact() {
             <li><a href={PHONE_HREF} data-testid="link-phone" className="flex items-center gap-4 hover:text-primary transition-colors"><Phone className="h-4 w-4 text-primary" />{PHONE}</a></li>
             <li className="flex items-start gap-4" data-testid="text-address"><MapPin className="h-4 w-4 mt-1 text-primary shrink-0" />{ADDRESS}</li>
           </ul>
+          <nav aria-label="Social media" className="mt-10 flex flex-wrap gap-3">
+            <button type="button" disabled title="Facebook page link coming soon" className="inline-flex items-center gap-2 border border-border px-4 py-3 text-xs text-foreground/40 cursor-not-allowed">
+              <Facebook className="h-4 w-4" aria-hidden="true" /> Facebook <span className="sr-only">(page link pending)</span>
+            </button>
+            <a href="https://www.linkedin.com/company/seesaw-production" target="_blank" rel="noopener noreferrer" data-testid="link-contact-linkedin" className="inline-flex items-center gap-2 border border-border px-4 py-3 text-xs text-foreground/80 transition-colors hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4">
+              <Linkedin className="h-4 w-4" aria-hidden="true" /> LinkedIn <span className="sr-only">(opens in a new tab)</span>
+            </a>
+            <a href="https://www.instagram.com/seesawproductionspk?psln=MXZlaW1pcmZ2OTc4Yg==" target="_blank" rel="noopener noreferrer" data-testid="link-contact-instagram" className="inline-flex items-center gap-2 border border-border px-4 py-3 text-xs text-foreground/80 transition-colors hover:border-primary hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4">
+              <Instagram className="h-4 w-4" aria-hidden="true" /> Instagram <span className="sr-only">(opens in a new tab)</span>
+            </a>
+          </nav>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} noValidate className="md:col-span-6 md:col-start-7 reveal space-y-8" aria-label="Project enquiry">
           <div className="grid sm:grid-cols-2 gap-8">
