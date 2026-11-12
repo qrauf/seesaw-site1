@@ -7,7 +7,7 @@ export interface VimeoFilm {
   duration?: string;
 }
 
-// Curated eight-film selection, in display order.
+// Curated film selection, in display order.
 const selectedFilms = [
   { id: '1098500396', duration: '00:32' },
   { id: '1028334236', duration: '00:30' },
@@ -17,6 +17,7 @@ const selectedFilms = [
   { id: '998204993', duration: '00:25' },
   { id: '948776541', duration: '00:35' },
   { id: '944068930', duration: '00:25' },
+  { id: '885815218', duration: '00:53' },
 ];
 
 export const vimeoFilms: VimeoFilm[] = selectedFilms.map((selection) => {
