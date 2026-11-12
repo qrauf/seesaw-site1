@@ -193,12 +193,6 @@ function Work() {
           >
             <img src={film.thumbnail} alt={film.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
-            <span className="absolute right-4 top-4 rounded-full border border-white/60 bg-black/30 p-2 text-white transition-colors group-hover:bg-primary">
-              <Play className="h-4 w-4 fill-current" aria-hidden="true" />
-            </span>
-            <div className="absolute inset-x-0 bottom-0 flex items-end justify-end p-5 text-white">
-              {film.duration && <span className="shrink-0 font-mono text-[10px]">{film.duration}</span>}
-            </div>
           </a>
         ))}
       </div>
