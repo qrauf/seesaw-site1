@@ -182,18 +182,14 @@ function Work() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {vimeoFilms.map((film) => (
-          <a
+          <div
             key={film.id}
-            href={`https://vimeo.com/${film.id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Watch ${film.title} on Vimeo (opens in a new tab)`}
             data-testid={`card-vimeo-${film.id}`}
-            className="group relative block aspect-video overflow-hidden bg-card focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-[-2px]"
+            className="group relative block aspect-video overflow-hidden bg-card"
           >
             <img src={film.thumbnail} alt={film.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-105" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
-          </a>
+          </div>
         ))}
       </div>
       <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 px-5 md:px-8 py-20 md:py-28 border-b border-border">
