@@ -6,7 +6,7 @@ import { ArrowUpRight, Facebook, Instagram, Linkedin, Mail, MapPin, Menu, Phone,
 
 const img = (n: string) => `${import.meta.env.BASE_URL}images/${n}`;
 const VIMEO = 'https://vimeo.com/seesawproduction';
-const EMAIL = 'hello@seesawproduction.com';
+const EMAIL = 'salman.tahir@seesawproduction.com';
 const PHONE = '+92 321 3784208';
 const PHONE_HREF = 'tel:+923213784208';
 const ADDRESS = 'Suite#402, Murtaza Lane 1-A, DHA Phase 8, Karachi';
