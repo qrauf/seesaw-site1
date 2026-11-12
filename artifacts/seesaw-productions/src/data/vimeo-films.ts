@@ -20,6 +20,7 @@ const selectedFilms = [
   { id: '885815218', duration: '00:53' },
   { id: '924408538', duration: '01:24' },
   { id: '695451240', duration: '00:30' },
+  { id: '695457516', duration: '00:46' },
 ];
 
 export const vimeoFilms: VimeoFilm[] = selectedFilms.map((selection) => {
