@@ -37,7 +37,7 @@ const SERVICES = [
 
 const TEAM = [
   { name: 'Salman Tahir', role: 'Founder & Executive Producer', src: 'salman.jpg' },
-  { name: 'Naveed Zuberi', role: 'Producer & Business Director', src: 'naveed-zuberi.jpeg' },
+  { name: 'Naveed Zuberi', role: 'Producer & Business Director', src: 'naveed-zuberi.jpeg', imageClass: 'origin-[50%_85%] scale-[1.6] group-hover:scale-[1.65]' },
   { name: 'Dilawar Ghafoor', role: 'Producer', src: 'dilawar.jpeg' },
   { name: 'Nawal Karim', role: 'Associate Producer', src: 'nawal.png' },
 ];
@@ -278,7 +278,7 @@ function TeamCard({ m, i }: { m: (typeof TEAM)[number]; i: number }) {
         {err ? (
           <div className="flex h-full items-center justify-center font-serif text-6xl text-primary">{initials}</div>
         ) : (
-          <img src={img(m.src)} alt={m.name} loading="lazy" onError={() => setErr(true)} className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-[1.03]" />
+          <img src={img(m.src)} alt={m.name} loading="lazy" onError={() => setErr(true)} className={`h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 ${'imageClass' in m ? m.imageClass : 'group-hover:scale-[1.03]'}`} />
         )}
       </div>
       <figcaption className="mt-5">
