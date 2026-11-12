@@ -169,7 +169,7 @@ function Work() {
         })}
       </div>
       <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 px-5 md:px-8 py-20 md:py-28 border-b border-border">
-        <h2 className="max-w-3xl font-serif text-4xl md:text-6xl leading-[1.05]">One reel. <em className="text-foreground/50">Five years</em> of frames that moved people.</h2>
+        <h2 className="max-w-3xl font-serif text-4xl md:text-6xl leading-[1.05]">One reel. <em className="text-foreground/50">More than 6 years</em> of frames that moved people.</h2>
         <a href={VIMEO} target="_blank" rel="noreferrer" data-testid="link-vimeo-channel" className="group flex items-center gap-3 text-[12px] uppercase tracking-[0.24em] hover:text-primary">
           Full showreel on Vimeo <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
         </a>
@@ -194,7 +194,7 @@ function Studio() {
           SeeSaw Productions bridges creative vision and flawless execution. Every project is a collaborative balance: big ideas on one side, rigorous planning on the other, held level until the film lands exactly where it should.
         </p>
         <dl className="reveal mt-14 grid grid-cols-2 border-t border-border">
-          {[['05+', 'Years of experience'], ['150+', 'Films delivered']].map(([v, l]) => (
+          {[['06+', 'Years of experience'], ['150+', 'Films delivered']].map(([v, l]) => (
             <div key={l} className="pt-6 pr-6">
               <dt className="sr-only">{l}</dt>
               <dd className="font-serif text-6xl md:text-7xl" data-testid={`text-stat-${v}`}>{v}</dd>
