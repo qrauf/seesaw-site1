@@ -14,9 +14,9 @@ const ADDRESS = 'Suite#402, Murtaza Lane 1-A, DHA Phase 8, Karachi';
 
 const NAV = [
   { id: 'work', label: 'Work' },
+  { id: 'team', label: 'Team' },
   { id: 'studio', label: 'Studio' },
   { id: 'capabilities', label: 'Capabilities' },
-  { id: 'team', label: 'Team' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -435,10 +435,10 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Work />
+        <Team />
         <Studio />
         <Capabilities />
         <Clients />
-        <Team />
         <Contact />
       </main>
       <Footer />
