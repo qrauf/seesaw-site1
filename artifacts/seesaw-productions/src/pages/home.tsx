@@ -151,7 +151,7 @@ function Hero() {
 
 function Work() {
   return (
-    <section id="work" aria-label="Work">
+    <section aria-label="Work">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {TILES.map((t, i) => {
           const ext = t.href.startsWith('http');
@@ -171,7 +171,7 @@ function Work() {
           );
         })}
       </div>
-      <div className="px-5 md:px-8 pt-20 md:pt-28 pb-8 flex flex-wrap items-end justify-between gap-6">
+      <div id="work" className="px-5 md:px-8 pt-20 md:pt-28 pb-8 flex flex-wrap items-end justify-between gap-6">
         <div>
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-primary">Selected films</p>
           <h2 className="mt-5 font-serif text-4xl md:text-6xl">Our work, in motion.</h2>
