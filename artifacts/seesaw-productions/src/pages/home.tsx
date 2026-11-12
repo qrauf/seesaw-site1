@@ -21,7 +21,7 @@ const NAV = [
 
 const TILES = [
   { src: 'studio-bts.png', kicker: 'Showreel', title: 'SeeSaw Productions Reel', note: 'Watch on Vimeo', href: VIMEO },
-  { src: 'tile-crane.jpg', kicker: 'Capability', title: 'TV Commercials', note: 'Illustrative frame', href: '#capabilities' },
+  { src: 'tile-crane.jpg', kicker: 'Capability', title: 'TV Commercials', note: '', href: '#capabilities' },
   { src: 'tile-sea.jpg', kicker: 'Capability', title: 'Branded Content', note: '', href: '#capabilities' },
   { src: 'tile-post.jpg', kicker: 'Capability', title: 'Post-Production', note: '', href: '#capabilities' },
 ];
