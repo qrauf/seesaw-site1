@@ -7,13 +7,13 @@ export interface VimeoFilm {
   duration?: string;
 }
 
-// The original eight-film selection, in its original display order.
+// Curated eight-film selection, in display order.
 const selectedFilms = [
   { id: '1098500396', duration: '00:32' },
   { id: '1028334236', duration: '00:30' },
   { id: '1151181043', duration: '00:30' },
   { id: '1121319274', duration: '00:45' },
-  { id: '1005743259', duration: '00:50' },
+  { id: '924410948', duration: '01:35' },
   { id: '998204993', duration: '00:25' },
   { id: '948776541', duration: '00:35' },
   { id: '944068930', duration: '00:25' },
