@@ -313,7 +313,7 @@ function Contact() {
           <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-primary">Contact</p>
           <h2 className="mt-5 font-serif text-5xl md:text-7xl leading-[0.95]">Let&rsquo;s tip<br /><em className="text-primary">the scales.</em></h2>
           <ul className="mt-12 space-y-6 text-foreground/80 font-light">
-            <li><a href={`mailto:${EMAIL}`} data-testid="link-email" className="flex items-center gap-4 hover:text-primary transition-colors"><Mail className="h-4 w-4 text-primary" />{EMAIL}</a></li>
+            <li><a href={`mailto:${EMAIL}`} data-testid="link-email" className="flex items-center gap-4 hover:text-primary transition-colors"><Mail className="h-4 w-4 shrink-0 text-primary" aria-hidden="true" /><span className="min-w-0 break-all">{EMAIL}</span></a></li>
             <li><a href={PHONE_HREF} data-testid="link-phone" className="flex items-center gap-4 hover:text-primary transition-colors"><Phone className="h-4 w-4 text-primary" />{PHONE}</a></li>
             <li className="flex items-start gap-4" data-testid="text-address"><MapPin className="h-4 w-4 mt-1 text-primary shrink-0" />{ADDRESS}</li>
           </ul>
