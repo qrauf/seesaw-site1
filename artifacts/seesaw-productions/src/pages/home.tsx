@@ -38,7 +38,7 @@ const SERVICES = [
 const TEAM = [
   { name: 'Salman Tahir', role: 'Founder & Executive Producer', src: 'salman.jpg', imageClass: 'object-top origin-[55%_0%] scale-[1.08] group-hover:scale-[1.13]' },
   { name: 'Naveed Zuberi', role: 'Producer & Business Director', src: 'naveed-zuberi.jpeg', imageClass: 'origin-[50%_85%] scale-[1.6] group-hover:scale-[1.65]' },
-  { name: 'Dilawar Ghafoor', role: 'Producer', src: 'dilawar-clean.jpeg', imageClass: 'origin-[50%_25%] scale-[1.15] group-hover:scale-[1.2]' },
+  { name: 'Dilawar Ghafoor', role: 'Producer', src: 'dilawar-clean.jpeg', imageClass: 'origin-[56%_18%] scale-[1.35] group-hover:scale-[1.4]' },
   { name: 'Nawal Karim', role: 'Associate Producer', src: 'nawal.png' },
 ];
 
