@@ -12,7 +12,6 @@ const selectedFilms = [
   { id: '1098500396', duration: '00:32' },
   { id: '1028334236', duration: '00:30' },
   { id: '1151181043', duration: '00:30' },
-  { id: '1151180565', duration: '00:32' },
   { id: '1121319274', duration: '00:45' },
   { id: '924410948', duration: '01:35' },
   { id: '998204993', duration: '00:25' },
