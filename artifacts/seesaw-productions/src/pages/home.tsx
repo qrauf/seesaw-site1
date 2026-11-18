@@ -187,7 +187,15 @@ function Work() {
             data-testid={`card-vimeo-${film.id}`}
             className="group relative block aspect-video overflow-hidden bg-card"
           >
-            <img src={film.thumbnail} alt={film.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 motion-safe:group-hover:scale-105" />
+            <img
+              src={film.thumbnail}
+              alt={film.title}
+              loading="lazy"
+              className={`absolute inset-0 h-full w-full object-cover transition-transform duration-700 ${
+                // The Free Fire thumbnail has black bars baked into the image.
+                film.id === '578362183' ? 'scale-[1.41] motion-safe:group-hover:scale-[1.48]' : 'motion-safe:group-hover:scale-105'
+              }`}
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
           </div>
         ))}
