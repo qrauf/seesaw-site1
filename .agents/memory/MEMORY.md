@@ -1,1 +1,0 @@
-- [Static hosting requirement](static-hosting.md) — Seesaw must remain hostable without a Node.js runtime.
